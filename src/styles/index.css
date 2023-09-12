@@ -12,6 +12,10 @@
     --text-color: theme("colors.white");
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-family);
     font-weight: var(--font-weight);
@@ -20,10 +24,22 @@
   }
 
   .home-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
       url("../assets/home-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .section-heading:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: theme("colors.indigo.500");
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

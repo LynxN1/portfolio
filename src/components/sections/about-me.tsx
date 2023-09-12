@@ -1,5 +1,12 @@
+import Layout from "@/components/layout";
+import SectionHeading from "@/components/section-heading";
+
 function AboutMe() {
-  return <div className="min-h-screen">About Me</div>;
+  return (
+    <Layout name="about" dark>
+      <SectionHeading text="Know Me More" backgroundText="About Me" />
+    </Layout>
+  );
 }
 
 export default AboutMe;

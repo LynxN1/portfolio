@@ -9,7 +9,7 @@ function App() {
     <div className="ml-[250px] flex">
       <Sidebar />
 
-      <div className="relative max-h-screen w-full overflow-y-auto">
+      <div id="sectionsContainer" className="relative max-h-screen w-full overflow-y-auto">
         <Home />
         <AboutMe />
         <Resume />
