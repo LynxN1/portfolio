@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { SECTIONS } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
-function Navigation({ activeSectionId }: { activeSectionId?: string }) {
+function Navigation() {
   return (
     <aside className="absolute left-0 top-0 h-screen w-[250px]">
       <div className="flex h-full flex-col justify-between p-5 text-center">
@@ -20,13 +20,14 @@ function Navigation({ activeSectionId }: { activeSectionId?: string }) {
         <ul className="flex flex-col gap-4">
           {SECTIONS.map((section) => {
             return (
-              <li
-                key={section.id}
-                className={cn("cursor-pointer select-none duration-200 hover:text-highlight", {
-                  "text-highlight": section.id === activeSectionId,
-                })}
-              >
-                <Link containerId="sectionsContainer" to={section.id} smooth duration={500}>
+              <li key={section.id}>
+                <Link
+                  containerId="sectionsContainer"
+                  to={section.id}
+                  smooth
+                  duration={500}
+                  className={cn("cursor-pointer select-none duration-200 hover:text-highlight")}
+                >
                   {section.name}
                 </Link>
               </li>
@@ -36,25 +37,29 @@ function Navigation({ activeSectionId }: { activeSectionId?: string }) {
 
         <div className="flex justify-center gap-4">
           <a
-            href="#"
+            href="https://discordapp.com/users/346916032633503745"
+            target="_blank"
             className="cursor-pointer text-white opacity-80 duration-200 hover:text-[#5865F2] hover:opacity-100"
           >
             <BiLogoDiscordAlt className="h-5 w-5" />
           </a>
           <a
-            href="#"
+            href="https://twitter.com/lynx1qq"
+            target="_blank"
             className="cursor-pointer text-white opacity-80 duration-200 hover:text-[#00acee] hover:opacity-100"
           >
             <AiOutlineTwitter className="h-5 w-5" />
           </a>
           <a
-            href="#"
+            href="https://linkedin.com/in/lynx1"
+            target="_blank"
             className="cursor-pointer text-white opacity-80 duration-200 hover:text-[#0072b1] hover:opacity-100"
           >
             <BiLogoLinkedin className="h-5 w-5" />
           </a>
           <a
-            href="#"
+            href="https://github.com/LynxN1"
+            target="_blank"
             className="cursor-pointer text-white opacity-80 duration-200 hover:opacity-100"
           >
             <AiFillGithub className="h-5 w-5" color="white" />

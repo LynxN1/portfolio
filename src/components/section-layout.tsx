@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 function SectionLayout({
   children,
   name,
-  dark = false,
+  dark,
 }: {
   children: React.ReactNode;
   name: string;
