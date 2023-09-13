@@ -3,8 +3,9 @@ import { AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin, BiLogoDiscordAlt } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { SECTIONS } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
-function Sidebar() {
+function Navigation({ activeSectionId }: { activeSectionId?: string }) {
   return (
     <aside className="absolute left-0 top-0 h-screen w-[250px]">
       <div className="flex h-full flex-col justify-between p-5 text-center">
@@ -21,7 +22,9 @@ function Sidebar() {
             return (
               <li
                 key={section.id}
-                className="cursor-pointer select-none duration-200 hover:text-highlight"
+                className={cn("cursor-pointer select-none duration-200 hover:text-highlight", {
+                  "text-highlight": section.id === activeSectionId,
+                })}
               >
                 <Link containerId="sectionsContainer" to={section.id} smooth duration={500}>
                   {section.name}
@@ -62,4 +65,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Navigation;

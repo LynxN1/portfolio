@@ -1,11 +1,11 @@
-import Layout from "../layout";
+import SectionLayout from "@/components/section-layout";
 import SectionHeading from "@/components/section-heading";
 
 function Resume() {
   return (
-    <Layout name="resume">
+    <SectionLayout name="resume">
       <SectionHeading text="Resume" backgroundText="Summary" />
-    </Layout>
+    </SectionLayout>
   );
 }
 

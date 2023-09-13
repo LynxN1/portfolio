@@ -1,11 +1,11 @@
-import Layout from "../layout";
+import SectionLayout from "@/components/section-layout";
 import SectionHeading from "@/components/section-heading";
 
 function Portfolio() {
   return (
-    <Layout name="portfolio" dark>
+    <SectionLayout name="portfolio" dark>
       <SectionHeading text="My Work" backgroundText="Portfolio" />
-    </Layout>
+    </SectionLayout>
   );
 }
 
