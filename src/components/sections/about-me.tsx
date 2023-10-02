@@ -12,12 +12,13 @@ function AboutMe() {
             I'm <span className="text-highlight">Lynx1</span>, a Web Developer
           </h1>
           <p className="opacity-50">
-            I specialize in creating dynamic and creative web applications using modern technologies
-            like HTML/CSS, TypeScript, React, and Next.js.
+            I specialize in creating full-stack web applications, dynamic and creative solutions
+            using modern technologies like TypeScript, React, Next.js, Astro.js and various backend
+            technologies.
           </p>
           <p className="opacity-50">
-            When I write code, my goal is to follow the best practices and create code that looks
-            nice, is easy to read, and works well. I think that having well-organized code is really
+            My goal when writing code is to stick to best practices and create code that looks nice,
+            is easy to read, and works well. I think that having well-organized code is really
             important for making projects successful and working effectively with a team.
           </p>
           <p className="opacity-50">
