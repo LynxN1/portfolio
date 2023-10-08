@@ -6,7 +6,7 @@ import Navigation from "@/components/navigation";
 
 function App() {
   return (
-    <div className="ml-[250px] flex">
+    <div className="flex flex-col lg:flex-row">
       <Navigation />
 
       <main id="sectionsContainer" className="relative max-h-screen w-full overflow-y-auto">
