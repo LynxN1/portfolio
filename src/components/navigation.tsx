@@ -1,4 +1,4 @@
-import photo from "@/assets/photo.jpg";
+import photo from "@/assets/photo2.jpg";
 import { AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin, BiLogoDiscordAlt } from "react-icons/bi";
 import { Link } from "react-scroll";
@@ -15,7 +15,7 @@ function Navigation() {
       <div className="hidden lg:flex lg:h-full lg:flex-col lg:justify-between lg:p-5 lg:text-center">
         <div className="flex flex-col items-center gap-2">
           <div className="relative aspect-square w-full overflow-hidden rounded-full border-8 border-indigo-950">
-            <img className="object-cover" src={photo} alt="photo" />
+            <img className="h-full w-full object-cover" src={photo} alt="photo" />
           </div>
           <h1 className="text-xl font-[500]">Vladyslav Lopuha</h1>
           <span className="text-sm opacity-60">@Lynx1</span>
