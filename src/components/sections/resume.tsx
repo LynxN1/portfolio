@@ -31,6 +31,7 @@ function Resume() {
           <ProgressBar title="Database administration" percent={68} />
           <ProgressBar title="Node.js" percent={82} />
           <ProgressBar title="REST API" percent={80} />
+          <ProgressBar title="Reverse engineering" percent={13} />
           <ProgressBar title="Python" percent={76} />
           <ProgressBar title="PHP" percent={28} />
           <ProgressBar title="Java" percent={37} />

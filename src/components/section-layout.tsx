@@ -16,7 +16,9 @@ function SectionLayout({
       name={name}
       className={cn("bg-gray-800 py-10 lg:py-24", { "bg-gray-900": dark })}
     >
-      <div className="px-4 xl:px-32">{children}</div>
+      <div className="flex w-full justify-center">
+        <div className="container px-2 lg:px-10">{children}</div>
+      </div>
     </Element>
   );
 }

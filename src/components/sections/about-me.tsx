@@ -16,14 +16,10 @@ function AboutMe() {
             technologies.
           </p>
           <p className="opacity-50">
-            My goal when writing code is to stick to best practices and create code that looks nice,
-            is easy to read, and works well. I think that having well-organized code is really
-            important for making projects successful and working effectively with a team.
+            My code is all about best practices, clean aesthetics, and functionality. I believe
+            well-organized code is key for project success and team collaboration.
           </p>
-          <p className="opacity-50">
-            Outside of coding, I have a passion for running and enjoy spending time in nature. I'm
-            also enthusiastic about exploring new tools and technologies related to web development.
-          </p>
+          <p className="opacity-50">Beyond programming I'm passionate about active recreation.</p>
           <p className="opacity-50">
             I'm always open to new opportunities and ready to engage in exciting projects where I
             can apply my skills and learn new ones.

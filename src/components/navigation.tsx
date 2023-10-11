@@ -98,9 +98,9 @@ function Navigation() {
           }}
         >
           <div className="flex h-full flex-col justify-between px-10 py-4 text-center">
-            <div className="flex flex-col items-center gap-2">
+            <div className="flex flex-col items-center gap-2 pt-12">
               <div className="relative aspect-square max-w-[200px] overflow-hidden rounded-full border-8 border-indigo-950">
-                <img className="object-cover" src={photo} alt="photo" />
+                <img className="h-full w-full object-cover" src={photo} alt="photo" />
               </div>
               <h1 className="text-xl font-[500]">Vladyslav Lopuha</h1>
               <span className="text-md opacity-60">@Lynx1</span>
