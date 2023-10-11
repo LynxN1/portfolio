@@ -3,6 +3,9 @@ import Home from "@/components/sections/home";
 import Portfolio from "@/components/sections/portfolio";
 import Resume from "@/components/sections/resume";
 import Navigation from "@/components/navigation";
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 function App() {
   return (

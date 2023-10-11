@@ -12,7 +12,7 @@ export const SECTIONS = [
     name: "Resume",
   },
   {
-    id: "portfolio",
-    name: "Portfolio",
+    id: "works",
+    name: "Works",
   },
 ];

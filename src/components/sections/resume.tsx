@@ -37,6 +37,27 @@ function Resume() {
           <ProgressBar title="Java" percent={37} />
           <ProgressBar title="Web Design" percent={20} />
         </div>
+        <h1 className="my-2 text-2xl font-bold">Technologies</h1>
+        <div className="flex flex-wrap gap-6">
+          <p className="rounded-md bg-gray-900 px-4 py-1">React</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Next.js</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Astro.js</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Django</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Flask</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Express.js</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Nginx</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Socket.IO</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Redux</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Tailwindcss</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">MySQL</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">PostgreSQL</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">MongoDB</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Vercel</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">GCP</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">AWS</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Strapi</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Other</p>
+        </div>
       </div>
     </SectionLayout>
   );

@@ -3,12 +3,16 @@ import { AiOutlineTwitter, AiFillGithub } from "react-icons/ai";
 import { BiLogoLinkedin, BiLogoDiscordAlt } from "react-icons/bi";
 import { Link } from "react-scroll";
 import { SECTIONS } from "@/lib/data";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 function Navigation() {
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const switchMobileMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
 
   return (
     <aside className="block h-[60px] w-full bg-black lg:h-screen lg:w-[300px]">
@@ -71,22 +75,27 @@ function Navigation() {
         </div>
       </div>
       <div className="flex h-full w-full items-center justify-end px-4 lg:hidden">
-        <div
-          className="flex w-[35px] cursor-pointer flex-col gap-2"
-          onClick={() => setMobileMenu(!mobileMenu)}
-        >
+        <div className="flex w-[35px] cursor-pointer flex-col gap-2" onClick={switchMobileMenu}>
           <span className="h-0.5 bg-white" />
           <span className="h-0.5 w-3/4 bg-white" />
           <span className="h-0.5 w-1/2 bg-white" />
         </div>
-        <motion.div
-          className={cn("fixed left-0 top-[60px] z-20 hidden h-screen w-full", {
-            block: mobileMenu,
-          })}
-          animate={{
-            backdropFilter: mobileMenu ? "blur(5px)" : "blur(0px)",
-          }}
-        />
+        <AnimatePresence>
+          {mobileMenu && (
+            <motion.div
+              className={cn("fixed left-0 top-[60px] z-20 hidden h-screen w-full", {
+                block: mobileMenu,
+              })}
+              animate={{
+                backdropFilter: "blur(5px)",
+              }}
+              exit={{
+                backdropFilter: "blur(0px)",
+              }}
+              onClick={switchMobileMenu}
+            />
+          )}
+        </AnimatePresence>
         <motion.div
           className="fixed top-0 z-50 h-screen w-3/4 bg-black"
           animate={{
@@ -96,6 +105,7 @@ function Navigation() {
             duration: 0.3,
             ease: "easeOut",
           }}
+          onClick={(e) => e.preventDefault()}
         >
           <div className="flex h-full flex-col justify-between px-10 py-4 text-center">
             <div className="flex flex-col items-center gap-2 pt-12">
