@@ -26,7 +26,7 @@
 
   .home-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-      url("../assets/home-bg.jpg");
+      url("../assets/home-bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

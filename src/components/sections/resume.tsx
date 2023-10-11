@@ -25,10 +25,10 @@ function Resume() {
         <h1 className="my-2 text-2xl font-bold">My Skills</h1>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <ProgressBar title="Web development" percent={93} />
-          <ProgressBar title="Software development" percent={53} />
-          <ProgressBar title="Android development" percent={29} />
+          <ProgressBar title="Software development" percent={63} />
+          <ProgressBar title="Android development" percent={43} />
           <ProgressBar title="Linux administration" percent={72} />
-          <ProgressBar title="Database administration" percent={68} />
+          <ProgressBar title="Database administration" percent={89} />
           <ProgressBar title="Node.js" percent={82} />
           <ProgressBar title="REST API" percent={80} />
           <ProgressBar title="Reverse engineering" percent={13} />
