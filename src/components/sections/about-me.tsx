@@ -29,7 +29,7 @@ function AboutMe() {
           <div className="flex flex-col items-center gap-4 lg:items-start">
             <ul className="about-info text-center text-lg lg:text-start">
               <li>
-                <span className="font-[800]">Name:</span> Vladyslav Lopuha
+                <span className="font-[800]">Name:</span> Vladyslav Skrynnyk
               </li>
               <li>
                 <span className="font-[800]">Email:</span> skr.vladyslav99@gmail.com

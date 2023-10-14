@@ -18,10 +18,10 @@ function Navigation() {
     <aside className="block h-[60px] w-full bg-black lg:h-screen lg:w-[300px]">
       <div className="hidden lg:flex lg:h-full lg:flex-col lg:justify-between lg:p-5 lg:text-center">
         <div className="flex flex-col items-center gap-2">
-          <div className="relative aspect-square w-full overflow-hidden rounded-full border-8 border-indigo-950">
-            <img className="h-full w-full object-cover" src={photo} alt="photo" />
+          <div className="relative aspect-square w-full max-w-[200px] overflow-hidden rounded-full border-4 border-indigo-950 p-1">
+            <img className="h-full w-full rounded-full object-cover" src={photo} alt="photo" />
           </div>
-          <h1 className="text-xl font-[500]">Vladyslav Lopuha</h1>
+          <h1 className="text-lg font-[500]">Vladyslav Skrynnyk</h1>
           <span className="text-sm opacity-60">@Lynx1</span>
         </div>
 
@@ -109,10 +109,10 @@ function Navigation() {
         >
           <div className="flex h-full flex-col justify-between px-10 py-4 text-center">
             <div className="flex flex-col items-center gap-2 pt-12">
-              <div className="relative aspect-square max-w-[200px] overflow-hidden rounded-full border-8 border-indigo-950">
-                <img className="h-full w-full object-cover" src={photo} alt="photo" />
+              <div className="relative aspect-square w-full max-w-[200px] overflow-hidden rounded-full border-4 border-indigo-950 p-1">
+                <img className="h-full w-full rounded-full object-cover" src={photo} alt="photo" />
               </div>
-              <h1 className="text-xl font-[500]">Vladyslav Lopuha</h1>
+              <h1 className="text-lg font-[500]">Vladyslav Skrynnyk</h1>
               <span className="text-md opacity-60">@Lynx1</span>
             </div>
 

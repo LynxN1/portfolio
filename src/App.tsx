@@ -1,6 +1,6 @@
 import AboutMe from "@/components/sections/about-me";
 import Home from "@/components/sections/home";
-import Portfolio from "@/components/sections/portfolio";
+import Works from "@/components/sections/works";
 import Resume from "@/components/sections/resume";
 import Navigation from "@/components/navigation";
 import Modal from "react-modal";
@@ -16,7 +16,7 @@ function App() {
         <Home />
         <AboutMe />
         <Resume />
-        <Portfolio />
+        <Works />
       </main>
     </div>
   );
