@@ -25,16 +25,18 @@ function Resume() {
         <h1 className="my-2 text-2xl font-bold">My Skills</h1>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <ProgressBar title="Web development" percent={93} />
-          <ProgressBar title="Software development" percent={63} />
+          <ProgressBar title="Software development" percent={76} />
           <ProgressBar title="Android development" percent={43} />
-          <ProgressBar title="Linux administration" percent={72} />
+          <ProgressBar title="Linux administration" percent={78} />
           <ProgressBar title="Database administration" percent={89} />
+          <ProgressBar title="Automation" percent={66} />
           <ProgressBar title="Node.js" percent={82} />
           <ProgressBar title="REST API" percent={80} />
-          <ProgressBar title="Reverse engineering" percent={13} />
+          <ProgressBar title="Reverse engineering" percent={24} />
           <ProgressBar title="Python" percent={96} />
-          <ProgressBar title="PHP" percent={28} />
-          <ProgressBar title="Java" percent={37} />
+          <ProgressBar title="PHP" percent={41} />
+          <ProgressBar title="Java" percent={53} />
+          <ProgressBar title="Kotlin" percent={50} />
           <ProgressBar title="Web Design" percent={20} />
         </div>
         <h1 className="my-2 text-2xl font-bold">Technologies</h1>
@@ -56,6 +58,8 @@ function Resume() {
           <p className="rounded-md bg-gray-900 px-4 py-1">GCP</p>
           <p className="rounded-md bg-gray-900 px-4 py-1">AWS</p>
           <p className="rounded-md bg-gray-900 px-4 py-1">Strapi</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Compose Multiplatform</p>
+          <p className="rounded-md bg-gray-900 px-4 py-1">Selenium</p>
           <p className="rounded-md bg-gray-900 px-4 py-1">Other</p>
         </div>
       </div>
