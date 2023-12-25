@@ -1,5 +1,6 @@
 import SectionLayout from "@/components/section-layout";
 import ProgressBar from "@/components/ui/progress-bar";
+import TechnologyBadge from "@/components/resume/technology-badge";
 
 function Resume() {
   return (
@@ -41,26 +42,27 @@ function Resume() {
         </div>
         <h1 className="my-2 text-2xl font-bold">Technologies</h1>
         <div className="flex flex-wrap gap-6">
-          <p className="rounded-md bg-gray-900 px-4 py-1">React</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Next.js</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Astro.js</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Django</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Flask</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Express.js</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Nginx</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Socket.IO</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Redux</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Tailwindcss</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">MySQL</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">PostgreSQL</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">MongoDB</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Vercel</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">GCP</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">AWS</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Strapi</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Compose Multiplatform</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Selenium</p>
-          <p className="rounded-md bg-gray-900 px-4 py-1">Other</p>
+          <TechnologyBadge name="React" />
+          <TechnologyBadge name="Next.js" />
+          <TechnologyBadge name="Astro.js" />
+          <TechnologyBadge name="Django" />
+          <TechnologyBadge name="Flask" />
+          <TechnologyBadge name="Express.js" />
+          <TechnologyBadge name="Nginx" />
+          <TechnologyBadge name="Socket.IO" />
+          <TechnologyBadge name="Redux" />
+          <TechnologyBadge name="Tailwindcss" />
+          <TechnologyBadge name="MySQL" />
+          <TechnologyBadge name="PostgreSQL" />
+          <TechnologyBadge name="MongoDB" />
+          <TechnologyBadge name="Vercel" />
+          <TechnologyBadge name="GCP" />
+          <TechnologyBadge name="AWS" />
+          <TechnologyBadge name="Strapi" />
+          <TechnologyBadge name="Compose Multiplatform" />
+          <TechnologyBadge name="Selenium" />
+          <TechnologyBadge name="Electron" />
+          <TechnologyBadge name="Other" />
         </div>
       </div>
     </SectionLayout>

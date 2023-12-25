@@ -8,7 +8,7 @@ function Portfolio() {
       <SectionLayout.Heading text="Recent Works" backgroundText="Experience" />
       <div className="grid grid-cols-1 items-center justify-center gap-8 lg:grid-cols-2 lg:items-start lg:justify-center">
         {WORKS.map((work) => (
-          <Work img={work.main_img} name={work.name} otherImgs={work.other_imgs} />
+          <Work name={work.name} assets={work.assets} />
         ))}
       </div>
     </SectionLayout>

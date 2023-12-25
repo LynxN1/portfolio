@@ -35,7 +35,7 @@ function AboutMe() {
                 <span className="font-[800]">Email:</span> skr.vladyslav99@gmail.com
               </li>
               <li>
-                <span className="font-[800]">Age:</span> 23
+                <span className="font-[800]">Age:</span> 24
               </li>
               <li>
                 <span className="font-[800]">From:</span> Kyiv, Ukraine

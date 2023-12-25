@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 import Modal from "@/components/ui/modal";
+import { Work as WorkType } from "@/types/index";
 import Slider from "react-slick";
 
 const settings = {
@@ -11,7 +12,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-function Work({ img, otherImgs, name }: { img: string; otherImgs?: string[]; name: string }) {
+function Work({ assets, name }: { assets: WorkType[]; name: string }) {
   const [isOpen, setOpen] = useState(false);
 
   const openModal = () => {
@@ -30,23 +31,24 @@ function Work({ img, otherImgs, name }: { img: string; otherImgs?: string[]; nam
             <div className="relative w-full">
               <h1 className="mb-5 text-center text-2xl font-semibold">{name}</h1>
               <Slider {...settings}>
-                <div className="relative aspect-[16/8] w-[500px] select-none px-2 focus-visible:outline-none">
-                  <img
-                    className="h-full w-full object-cover"
-                    src={img}
-                    alt="asd"
-                    draggable={false}
-                  />
-                </div>
-                {otherImgs &&
-                  otherImgs.map((otherImg) => (
+                {assets &&
+                  assets.map((asset) => (
                     <div className="relative aspect-[16/8] w-[500px] select-none px-2 focus-visible:outline-none">
-                      <img
-                        className="h-full w-full object-cover"
-                        src={otherImg}
-                        alt="asd"
-                        draggable={false}
-                      />
+                      {asset.type === "img" ? (
+                        <img
+                          className="h-full w-full object-contain"
+                          src={asset.src}
+                          alt="assets"
+                          draggable={false}
+                        />
+                      ) : (
+                        <video
+                          controls
+                          className="h-full w-full object-contain"
+                          src={asset.src}
+                          draggable={false}
+                        />
+                      )}
                     </div>
                   ))}
               </Slider>
@@ -64,7 +66,7 @@ function Work({ img, otherImgs, name }: { img: string; otherImgs?: string[]; nam
         </div>
         <img
           className="h-full w-full object-cover duration-200 group-hover:scale-[1.05]"
-          src={img}
+          src={assets[0].src}
           alt="screenshot"
           draggable={false}
         />
